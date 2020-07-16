@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73394AD04AA3A55F25AC55E2 /* Pods_HZCycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEC2968AA1D6F340BAF4569 /* Pods_HZCycleView.framework */; };
 		A680E09724C0516900B05A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09624C0516900B05A37 /* AppDelegate.swift */; };
 		A680E09924C0516900B05A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09824C0516900B05A37 /* SceneDelegate.swift */; };
 		A680E09B24C0516900B05A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09A24C0516900B05A37 /* ViewController.swift */; };
 		A680E09E24C0516900B05A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680E09C24C0516900B05A37 /* Main.storyboard */; };
 		A680E0A024C0516C00B05A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A680E09F24C0516C00B05A37 /* Assets.xcassets */; };
 		A680E0A324C0516C00B05A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680E0A124C0516C00B05A37 /* LaunchScreen.storyboard */; };
+		A680E0AD24C052F700B05A37 /* HZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0AB24C052F600B05A37 /* HZCycleView.swift */; };
+		A680E0AE24C052F700B05A37 /* HZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */; };
+		A680E0FE24C05C6000B05A37 /* HZDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0FD24C05C6000B05A37 /* HZDataModel.swift */; };
+		A680E10124C05D2700B05A37 /* HWNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E10024C05D2700B05A37 /* HWNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A26442B247AE41ABE7ADB0C /* Pods-HZCycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZCycleView.release.xcconfig"; path = "Target Support Files/Pods-HZCycleView/Pods-HZCycleView.release.xcconfig"; sourceTree = "<group>"; };
+		5F7B5CD688CD97034B6B6A66 /* Pods-HZCycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZCycleView.debug.xcconfig"; path = "Target Support Files/Pods-HZCycleView/Pods-HZCycleView.debug.xcconfig"; sourceTree = "<group>"; };
 		A680E09324C0516900B05A37 /* HZCycleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZCycleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680E09624C0516900B05A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A680E09824C0516900B05A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		A680E09F24C0516C00B05A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A680E0A224C0516C00B05A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A680E0A424C0516C00B05A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A680E0AB24C052F600B05A37 /* HZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZCycleView.swift; sourceTree = "<group>"; };
+		A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZCycleViewCell.swift; sourceTree = "<group>"; };
+		A680E0FD24C05C6000B05A37 /* HZDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZDataModel.swift; sourceTree = "<group>"; };
+		A680E10024C05D2700B05A37 /* HWNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWNetworking.swift; sourceTree = "<group>"; };
+		FDEC2968AA1D6F340BAF4569 /* Pods_HZCycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HZCycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73394AD04AA3A55F25AC55E2 /* Pods_HZCycleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D943DA00C122E82652725C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC2968AA1D6F340BAF4569 /* Pods_HZCycleView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4456C76059948BD4A555344C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F7B5CD688CD97034B6B6A66 /* Pods-HZCycleView.debug.xcconfig */,
+				5A26442B247AE41ABE7ADB0C /* Pods-HZCycleView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A680E08A24C0516900B05A37 = {
 			isa = PBXGroup;
 			children = (
 				A680E09524C0516900B05A37 /* HZCycleView */,
 				A680E09424C0516900B05A37 /* Products */,
+				4456C76059948BD4A555344C /* Pods */,
+				05D943DA00C122E82652725C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,8 @@
 		A680E09524C0516900B05A37 /* HZCycleView */ = {
 			isa = PBXGroup;
 			children = (
+				A680E0FF24C05D2700B05A37 /* HWNetworking */,
+				A680E0AA24C0525D00B05A37 /* HZCycleView */,
 				A680E09624C0516900B05A37 /* AppDelegate.swift */,
 				A680E09824C0516900B05A37 /* SceneDelegate.swift */,
 				A680E09A24C0516900B05A37 /* ViewController.swift */,
@@ -67,6 +101,24 @@
 			path = HZCycleView;
 			sourceTree = "<group>";
 		};
+		A680E0AA24C0525D00B05A37 /* HZCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				A680E0FD24C05C6000B05A37 /* HZDataModel.swift */,
+				A680E0AB24C052F600B05A37 /* HZCycleView.swift */,
+				A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */,
+			);
+			path = HZCycleView;
+			sourceTree = "<group>";
+		};
+		A680E0FF24C05D2700B05A37 /* HWNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A680E10024C05D2700B05A37 /* HWNetworking.swift */,
+			);
+			path = HWNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A680E0A724C0516C00B05A37 /* Build configuration list for PBXNativeTarget "HZCycleView" */;
 			buildPhases = (
+				3DF7DEF5DC9DB1DA11943DFE /* [CP] Check Pods Manifest.lock */,
 				A680E08F24C0516900B05A37 /* Sources */,
 				A680E09024C0516900B05A37 /* Frameworks */,
 				A680E09124C0516900B05A37 /* Resources */,
+				22E5DB438B031779E699E6A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +187,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22E5DB438B031779E699E6A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HZCycleView/Pods-HZCycleView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HZCycleView/Pods-HZCycleView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HZCycleView/Pods-HZCycleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DF7DEF5DC9DB1DA11943DFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZCycleView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A680E08F24C0516900B05A37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A680E09B24C0516900B05A37 /* ViewController.swift in Sources */,
+				A680E10124C05D2700B05A37 /* HWNetworking.swift in Sources */,
+				A680E0AE24C052F700B05A37 /* HZCycleViewCell.swift in Sources */,
+				A680E0AD24C052F700B05A37 /* HZCycleView.swift in Sources */,
+				A680E0FE24C05C6000B05A37 /* HZDataModel.swift in Sources */,
 				A680E09724C0516900B05A37 /* AppDelegate.swift in Sources */,
 				A680E09924C0516900B05A37 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +382,7 @@
 		};
 		A680E0A824C0516C00B05A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7B5CD688CD97034B6B6A66 /* Pods-HZCycleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +401,7 @@
 		};
 		A680E0A924C0516C00B05A37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A26442B247AE41ABE7ADB0C /* Pods-HZCycleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
