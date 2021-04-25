@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HandyJSON
 
 class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -18,7 +19,7 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     var timer:Timer?
     var titles:NSMutableArray?
     
-    let controlHeight = 35
+    let controlHeight = 20
     let scrollInterval = 3.0
     let cellIdentifier = "HZCycleViewCell"
     
@@ -26,6 +27,8 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
         super.init(frame: frame)
         
         buildUI()
+        
+        loadNetData()
     }
     
     required init?(coder: NSCoder) {
@@ -34,11 +37,11 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     
     func buildUI() {
         let layout = UICollectionViewFlowLayout.init()
-        layout.itemSize = CGSize.init(width: self.bounds.size.width, height: self.bounds.size.height)
+        layout.itemSize = CGSize.init(width: Double(screenWidth), height: cycleViewHeight)
         layout.minimumLineSpacing = 0;
         layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         
-        collectionView = UICollectionView.init(frame: self.bounds, collectionViewLayout: layout)
+        collectionView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView!.delegate = self;
         collectionView!.dataSource = self;
         collectionView!.isPagingEnabled = true;
@@ -46,16 +49,38 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
         collectionView?.register(HZCycleViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView!.showsHorizontalScrollIndicator = false;
         addSubview(collectionView!)
+        collectionView?.snp.makeConstraints({ make in
+            make.top.left.right.bottom.equalToSuperview()
+        })
         
-        pageControl = UIPageControl.init(frame: CGRect.init(x: 0, y: Int(self.bounds.size.height)-controlHeight, width: Int(UIScreen.main.bounds.width), height: controlHeight))
-        pageControl?.pageIndicatorTintColor = UIColor.lightGray
-        pageControl?.currentPageIndicatorTintColor = UIColor.black
+        pageControl = UIPageControl.init(frame: CGRect.zero)
+        pageControl?.pageIndicatorTintColor = UIColor.gray
+        pageControl?.currentPageIndicatorTintColor = UIColor.red
         addSubview(pageControl!);
         
-        timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(showNext), userInfo: nil, repeats: true)
-        timer!.fireDate = NSDate.distantFuture
+        pageControl?.snp.makeConstraints({ make in
+            make.left.right.bottom.equalToSuperview()
+            make.height.equalTo(controlHeight)
+        })
+        
+//        timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(showNext), userInfo: nil, repeats: true)
+//        timer!.fireDate = NSDate.distantFuture
         
         autoPage = false
+    }
+    
+    func loadNetData() {
+        print(HomeBannerUrl)
+        HN.GET(url: HomeBannerUrl, parameters: nil).success { (response) in
+            print(response)
+            let dic:[String:Any] = response as! [String:Any]
+            let list:[NSDictionary] = dic["data"] as! [NSDictionary]
+            let cycleDatas = (JSONDeserializer<HZCycleModel>.deserializeModelArrayFrom(array: list)! as NSArray)
+            self.showData(array:cycleDatas)
+            self.autoAnimation(autoAnimation: true)
+        }.failed { (error) in
+            print(error)
+        }
     }
     
     func showData(array: NSArray) {
@@ -64,13 +89,24 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
         titles?.add(array.firstObject as Any)
         titles?.insert(array.lastObject as Any, at: 0)
         collectionView?.setContentOffset(CGPoint.init(x: (collectionView?.bounds.size.width)!, y: 0), animated: true)
-        pageControl?.numberOfPages = array.count;
+        pageControl?.numberOfPages = array.count
+        DispatchQueue.main.async {
+            self.collectionView?.reloadData()
+        }
     }
     
     func autoAnimation(autoAnimation: Bool) {
         autoPage = autoAnimation
-        let fireDate = autoAnimation ? (NSDate (timeIntervalSinceNow:scrollInterval) as Date) : (NSDate.distantFuture as Date)
-        timer!.fireDate = fireDate;
+        
+        timer?.invalidate()
+        timer = nil
+        
+        if autoAnimation {
+            timer = Timer.scheduledTimer(timeInterval: scrollInterval, target: self, selector: #selector(showNext), userInfo: nil, repeats: true)
+            let fireDate = autoAnimation ? (NSDate (timeIntervalSinceNow:scrollInterval) as Date) : (NSDate.distantFuture as Date)
+            timer!.fireDate = fireDate;
+        }
+
     }
     
     // MARK: Delegate
@@ -81,9 +117,14 @@ class HZCycleView: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! HZCycleViewCell
-        let model:HZDataModel = titles![indexPath.row] as! HZDataModel
+        let model:HZCycleModel = titles![indexPath.row] as! HZCycleModel
         cell.show(title: model.title!, imageName: model.image!)
         return cell;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model:HZCycleModel = titles![indexPath.row] as! HZCycleModel
+        print(model.title as Any)
     }
     
     //手动拖拽结束

@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import Kingfisher
 
 class HZCycleViewCell: UICollectionViewCell {
     
@@ -29,7 +28,8 @@ class HZCycleViewCell: UICollectionViewCell {
     
     func buildUI() {
         backImageView = UIImageView.init()
-        backImageView?.contentMode = UIView.ContentMode.scaleAspectFill
+        backImageView?.contentMode = .scaleAspectFill
+        backImageView?.clipsToBounds = true
         contentView.addSubview(backImageView!)
         
         backImageView?.snp.makeConstraints({ make in
@@ -53,8 +53,9 @@ class HZCycleViewCell: UICollectionViewCell {
     func show(title: String, imageName: String) {
         textLabel?.text = title
         
-        print(imageName)
         let url = URL(string: imageName)
         backImageView?.kf.setImage(with: url)
     }
+    
+    
 }

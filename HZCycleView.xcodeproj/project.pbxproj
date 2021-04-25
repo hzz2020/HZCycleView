@@ -8,24 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		73394AD04AA3A55F25AC55E2 /* Pods_HZCycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEC2968AA1D6F340BAF4569 /* Pods_HZCycleView.framework */; };
+		A60C884024E3867000085F40 /* HZCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C883F24E3867000085F40 /* HZCycleModel.swift */; };
+		A60C884224E38A6200085F40 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C884124E38A6200085F40 /* HomeModel.swift */; };
+		A60C884424E38FE900085F40 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C884324E38FE800085F40 /* HomeCell.swift */; };
+		A60C884624E3C97400085F40 /* NetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C884524E3C97400085F40 /* NetConst.swift */; };
+		A60C884824E3EACD00085F40 /* GirlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C884724E3EACD00085F40 /* GirlModel.swift */; };
+		A60C884A24E3EAED00085F40 /* GirlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C884924E3EAED00085F40 /* GirlViewController.swift */; };
+		A639BB7824E6195900D790A2 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639BB7724E6195900D790A2 /* ReadViewController.swift */; };
+		A639BB7A24E619F300D790A2 /* CatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639BB7924E619F300D790A2 /* CatagoryViewController.swift */; };
+		A639BB7D24E62EAE00D790A2 /* HZImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639BB7C24E62EAE00D790A2 /* HZImageViewer.swift */; };
+		A639BB7F24E63B3A00D790A2 /* HZImageViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639BB7E24E63B3A00D790A2 /* HZImageViewerCell.swift */; };
+		A639BB8124E6656400D790A2 /* HZImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639BB8024E6656400D790A2 /* HZImageLoading.swift */; };
+		A64E433724E43CC6009E94D1 /* GirlViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E433624E43CC6009E94D1 /* GirlViewCell.swift */; };
+		A651E9DC24E27F080048585B /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9DB24E27F080048585B /* BaseTabbarController.swift */; };
+		A651E9DE24E27F3E0048585B /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9DD24E27F3E0048585B /* BaseNavigationController.swift */; };
+		A651E9E024E27F5E0048585B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9DF24E27F5E0048585B /* BaseViewController.swift */; };
+		A651E9E224E2805A0048585B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9E124E2805A0048585B /* HomeViewController.swift */; };
+		A651E9E424E280810048585B /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9E324E280810048585B /* MineViewController.swift */; };
+		A651E9EF24E28F370048585B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9EE24E28F370048585B /* Const.swift */; };
 		A680E09724C0516900B05A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09624C0516900B05A37 /* AppDelegate.swift */; };
-		A680E09924C0516900B05A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09824C0516900B05A37 /* SceneDelegate.swift */; };
 		A680E09B24C0516900B05A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E09A24C0516900B05A37 /* ViewController.swift */; };
 		A680E09E24C0516900B05A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680E09C24C0516900B05A37 /* Main.storyboard */; };
 		A680E0A024C0516C00B05A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A680E09F24C0516C00B05A37 /* Assets.xcassets */; };
 		A680E0A324C0516C00B05A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680E0A124C0516C00B05A37 /* LaunchScreen.storyboard */; };
 		A680E0AD24C052F700B05A37 /* HZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0AB24C052F600B05A37 /* HZCycleView.swift */; };
 		A680E0AE24C052F700B05A37 /* HZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */; };
-		A680E0FE24C05C6000B05A37 /* HZDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E0FD24C05C6000B05A37 /* HZDataModel.swift */; };
 		A680E10124C05D2700B05A37 /* HWNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680E10024C05D2700B05A37 /* HWNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A26442B247AE41ABE7ADB0C /* Pods-HZCycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZCycleView.release.xcconfig"; path = "Target Support Files/Pods-HZCycleView/Pods-HZCycleView.release.xcconfig"; sourceTree = "<group>"; };
 		5F7B5CD688CD97034B6B6A66 /* Pods-HZCycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZCycleView.debug.xcconfig"; path = "Target Support Files/Pods-HZCycleView/Pods-HZCycleView.debug.xcconfig"; sourceTree = "<group>"; };
+		A60C883F24E3867000085F40 /* HZCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZCycleModel.swift; sourceTree = "<group>"; };
+		A60C884124E38A6200085F40 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		A60C884324E38FE800085F40 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		A60C884524E3C97400085F40 /* NetConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConst.swift; sourceTree = "<group>"; };
+		A60C884724E3EACD00085F40 /* GirlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlModel.swift; sourceTree = "<group>"; };
+		A60C884924E3EAED00085F40 /* GirlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlViewController.swift; sourceTree = "<group>"; };
+		A615EC1024E4CC0B003F5782 /* HZCycleView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HZCycleView-Bridging-Header.h"; sourceTree = "<group>"; };
+		A639BB7724E6195900D790A2 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		A639BB7924E619F300D790A2 /* CatagoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryViewController.swift; sourceTree = "<group>"; };
+		A639BB7C24E62EAE00D790A2 /* HZImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZImageViewer.swift; sourceTree = "<group>"; };
+		A639BB7E24E63B3A00D790A2 /* HZImageViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZImageViewerCell.swift; sourceTree = "<group>"; };
+		A639BB8024E6656400D790A2 /* HZImageLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZImageLoading.swift; sourceTree = "<group>"; };
+		A64E433624E43CC6009E94D1 /* GirlViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlViewCell.swift; sourceTree = "<group>"; };
+		A651E9DB24E27F080048585B /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
+		A651E9DD24E27F3E0048585B /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A651E9DF24E27F5E0048585B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A651E9E124E2805A0048585B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A651E9E324E280810048585B /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		A651E9EE24E28F370048585B /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		A680E09324C0516900B05A37 /* HZCycleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZCycleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680E09624C0516900B05A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A680E09824C0516900B05A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A680E09A24C0516900B05A37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A680E09D24C0516900B05A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A680E09F24C0516C00B05A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +67,6 @@
 		A680E0A424C0516C00B05A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A680E0AB24C052F600B05A37 /* HZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZCycleView.swift; sourceTree = "<group>"; };
 		A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZCycleViewCell.swift; sourceTree = "<group>"; };
-		A680E0FD24C05C6000B05A37 /* HZDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZDataModel.swift; sourceTree = "<group>"; };
 		A680E10024C05D2700B05A37 /* HWNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWNetworking.swift; sourceTree = "<group>"; };
 		FDEC2968AA1D6F340BAF4569 /* Pods_HZCycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HZCycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +100,79 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A60C883A24E3792400085F40 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9E124E2805A0048585B /* HomeViewController.swift */,
+				A60C884124E38A6200085F40 /* HomeModel.swift */,
+				A60C884324E38FE800085F40 /* HomeCell.swift */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		A60C883B24E3792B00085F40 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				A639BB7924E619F300D790A2 /* CatagoryViewController.swift */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		A60C883C24E3793500085F40 /* 美女 */ = {
+			isa = PBXGroup;
+			children = (
+				A60C884924E3EAED00085F40 /* GirlViewController.swift */,
+				A60C884724E3EACD00085F40 /* GirlModel.swift */,
+				A64E433624E43CC6009E94D1 /* GirlViewCell.swift */,
+			);
+			path = "美女";
+			sourceTree = "<group>";
+		};
+		A60C883D24E3794100085F40 /* 阅读 */ = {
+			isa = PBXGroup;
+			children = (
+				A639BB7724E6195900D790A2 /* ReadViewController.swift */,
+			);
+			path = "阅读";
+			sourceTree = "<group>";
+		};
+		A60C883E24E3794800085F40 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9E324E280810048585B /* MineViewController.swift */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		A639BB7B24E62E7600D790A2 /* HZImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A639BB7C24E62EAE00D790A2 /* HZImageViewer.swift */,
+				A639BB7E24E63B3A00D790A2 /* HZImageViewerCell.swift */,
+				A639BB8024E6656400D790A2 /* HZImageLoading.swift */,
+			);
+			path = HZImageViewer;
+			sourceTree = "<group>";
+		};
+		A651E9DA24E27EB10048585B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9DB24E27F080048585B /* BaseTabbarController.swift */,
+				A651E9DD24E27F3E0048585B /* BaseNavigationController.swift */,
+				A651E9DF24E27F5E0048585B /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A651E9EB24E28F010048585B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9EE24E28F370048585B /* Const.swift */,
+				A60C884524E3C97400085F40 /* NetConst.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		A680E08A24C0516900B05A37 = {
 			isa = PBXGroup;
 			children = (
@@ -88,15 +194,23 @@
 		A680E09524C0516900B05A37 /* HZCycleView */ = {
 			isa = PBXGroup;
 			children = (
+				A639BB7B24E62E7600D790A2 /* HZImageViewer */,
+				A60C883A24E3792400085F40 /* 首页 */,
+				A60C883B24E3792B00085F40 /* 分类 */,
+				A60C883C24E3793500085F40 /* 美女 */,
+				A60C883D24E3794100085F40 /* 阅读 */,
+				A60C883E24E3794800085F40 /* 我的 */,
+				A651E9EB24E28F010048585B /* Other */,
+				A651E9DA24E27EB10048585B /* Base */,
 				A680E0FF24C05D2700B05A37 /* HWNetworking */,
 				A680E0AA24C0525D00B05A37 /* HZCycleView */,
 				A680E09624C0516900B05A37 /* AppDelegate.swift */,
-				A680E09824C0516900B05A37 /* SceneDelegate.swift */,
 				A680E09A24C0516900B05A37 /* ViewController.swift */,
 				A680E09C24C0516900B05A37 /* Main.storyboard */,
 				A680E09F24C0516C00B05A37 /* Assets.xcassets */,
 				A680E0A124C0516C00B05A37 /* LaunchScreen.storyboard */,
 				A680E0A424C0516C00B05A37 /* Info.plist */,
+				A615EC1024E4CC0B003F5782 /* HZCycleView-Bridging-Header.h */,
 			);
 			path = HZCycleView;
 			sourceTree = "<group>";
@@ -104,8 +218,8 @@
 		A680E0AA24C0525D00B05A37 /* HZCycleView */ = {
 			isa = PBXGroup;
 			children = (
-				A680E0FD24C05C6000B05A37 /* HZDataModel.swift */,
 				A680E0AB24C052F600B05A37 /* HZCycleView.swift */,
+				A60C883F24E3867000085F40 /* HZCycleModel.swift */,
 				A680E0AC24C052F600B05A37 /* HZCycleViewCell.swift */,
 			);
 			path = HZCycleView;
@@ -153,6 +267,7 @@
 				TargetAttributes = {
 					A680E09224C0516900B05A37 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -234,13 +349,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60C884024E3867000085F40 /* HZCycleModel.swift in Sources */,
+				A639BB7A24E619F300D790A2 /* CatagoryViewController.swift in Sources */,
+				A651E9DE24E27F3E0048585B /* BaseNavigationController.swift in Sources */,
+				A639BB8124E6656400D790A2 /* HZImageLoading.swift in Sources */,
+				A651E9E424E280810048585B /* MineViewController.swift in Sources */,
+				A60C884A24E3EAED00085F40 /* GirlViewController.swift in Sources */,
+				A60C884224E38A6200085F40 /* HomeModel.swift in Sources */,
 				A680E09B24C0516900B05A37 /* ViewController.swift in Sources */,
 				A680E10124C05D2700B05A37 /* HWNetworking.swift in Sources */,
+				A651E9DC24E27F080048585B /* BaseTabbarController.swift in Sources */,
+				A639BB7F24E63B3A00D790A2 /* HZImageViewerCell.swift in Sources */,
 				A680E0AE24C052F700B05A37 /* HZCycleViewCell.swift in Sources */,
+				A639BB7824E6195900D790A2 /* ReadViewController.swift in Sources */,
+				A64E433724E43CC6009E94D1 /* GirlViewCell.swift in Sources */,
+				A651E9E224E2805A0048585B /* HomeViewController.swift in Sources */,
+				A651E9E024E27F5E0048585B /* BaseViewController.swift in Sources */,
+				A60C884824E3EACD00085F40 /* GirlModel.swift in Sources */,
 				A680E0AD24C052F700B05A37 /* HZCycleView.swift in Sources */,
-				A680E0FE24C05C6000B05A37 /* HZDataModel.swift in Sources */,
+				A60C884624E3C97400085F40 /* NetConst.swift in Sources */,
+				A639BB7D24E62EAE00D790A2 /* HZImageViewer.swift in Sources */,
+				A60C884424E38FE900085F40 /* HomeCell.swift in Sources */,
 				A680E09724C0516900B05A37 /* AppDelegate.swift in Sources */,
-				A680E09924C0516900B05A37 /* SceneDelegate.swift in Sources */,
+				A651E9EF24E28F370048585B /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +516,7 @@
 			baseConfigurationReference = 5F7B5CD688CD97034B6B6A66 /* Pods-HZCycleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7SHS4UC6G;
 				INFOPLIST_FILE = HZCycleView/Info.plist;
@@ -394,6 +526,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hzz.HZCycleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HZCycleView/HZCycleView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +538,7 @@
 			baseConfigurationReference = 5A26442B247AE41ABE7ADB0C /* Pods-HZCycleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7SHS4UC6G;
 				INFOPLIST_FILE = HZCycleView/Info.plist;
@@ -413,6 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hzz.HZCycleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HZCycleView/HZCycleView-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

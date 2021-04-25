@@ -8,7 +8,8 @@ inhibit_all_warnings!
 target 'HZCycleView' do
   # Use dynamic frameworks
   use_frameworks!
-
+  # 忽略引入库的所有警告
+  inhibit_all_warnings!
   # 网络请求，类似`AFNetworking`
   # https://github.com/Alamofire/Alamofire
   pod 'Alamofire', '~> 5.1.0'
@@ -26,8 +27,13 @@ target 'HZCycleView' do
   # 自动布局类似`Masonry`
   # https://github.com/SnapKit/SnapKit
   pod 'SnapKit', '~> 5.0.1'
-
-
+  
+  # OC库
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  
+  
+  
 end
 
 
